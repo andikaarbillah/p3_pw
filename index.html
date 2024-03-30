@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <img src="gambar/logohima.png" alt="">
@@ -19,13 +20,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-bold" href="#">Home</a>
+                        <a class="nav-link fw-bold" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-bold" href="#">Pemrograman</a>
+                        <a class="nav-link fw-bold" href="#">Pemrograman</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-bold" href="#">Framework</a>
+                        <a class="nav-link fw-bold" href="#">Framework</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -35,8 +36,8 @@
             </div>
         </div>
     </nav>
-
-    <div class="container mt-5">
+<!-- corousel -->
+    <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide shadow" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -64,17 +65,20 @@
             </button>
         </div>
     </div>
-
-    <div class="container">
-        <h1 class="text-center mt-5">Hi, There!</h1>
+<!-- container -->
+    <div class="container mt-0">
+        
+        <h1 class="text-center">Hi, There!</h1>
         <p class="text-center">
             Yuk, ikut bergabung dalam komunitas coding yang seru bersama divisi IT! Ajak teman-temanmu untuk bersama-sama memperdalam pengetahuan dan keterampilan dalam dunia pemrograman. Ayo, jangan lewatkan kesempatan ini untuk belajar dan berbagi bersama!
         </p>
     </div>
-    <div class="container py-5">
-        <hr>
-        <h1 class="text-center">Programming Language</h1>
-        <hr>
+    <!-- card -->
+    <div class="container py-2">
+        <div class="bg-dark">
+        <h1 class="text-center text-white py-3">Programming Language</h1>
+        </div>
+        
         <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
             <div class="col">
                 <div class="card">
@@ -123,19 +127,20 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
     <footer class="bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="footer-container">
-                        <h3>Contact Us</h3>
+                        <h4>Contact Us</h4>
                         <p>Email: chrandika3@gmail.com</p>
                         <p>Phone: +62-852-1506-5884</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="footer-container">
-                        <h3>Quick Links</h3>
+                        <h4>Quick Links</h4>
                         <ul class="list-unstyled">
                             <li><a href="" class="menu" >Home</a></li>
                             <li><a href="" class="menu" >About</a></li>
@@ -147,7 +152,7 @@
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="footer-container">
-                        <h3>Follow Us</h3>
+                        <h4>Follow Us</h4>
                         <ul class="list-unstyled social-icons">
                             <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
                             <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
@@ -170,22 +175,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            navbarLinks.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    // Hapus kelas clicked dari semua link
-                    navbarLinks.forEach(function (link) {
-                        link.classList.remove('clicked');
-                    });
-
-                    // Tambahkan kelas clicked ke link yang diklik
-                    this.classList.add('clicked');
-                });
-            });
-        });
-    </script>
     
 </body>
 

@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+.container{
+    padding-top: 70px;
+}
+
+.navbar{
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 /* Body Styling */
 body {
     background-color: #cfcfce;
@@ -54,7 +69,7 @@ img {
 }
 
 .menu:hover{
-    color: rgb(0, 89, 255);
+    color: #007bff;
     text-decoration: none;
 }
 .menu{
@@ -66,8 +81,13 @@ a.nav-link text-white fw-bold:hover{
     color: orange;
     text-decoration: none;
 }
-
-footer {
-    padding-top: 5px; /* Tambahkan padding di bagian atas footer */
-    margin-top: 5px; /* Tambahkan margin di bagian atas footer */
+.nav-link{
+    color: white;
 }
+
+.nav-link:hover{
+    color: #007bff;
+}
+
+
+
